@@ -3,13 +3,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: max(60px, 10vh);
+    height: var(--header-height);
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: max(40px, 3.5vw);
-    padding-right: max(3vw, 30px);
+    padding-left: max(20px, 2vw);
+    padding-right: max(2vw, 20px);
     background-color: white;
     box-shadow: rgba(3, 102, 214, 0.3) 0px 2px 4px;
 }
@@ -25,8 +25,8 @@ header {
 }
 
 .logo-icon {
-    font-size: 3rem; /* or adjust based on design */
-    margin-right: 10px;
+    font-size: calc(2rem + 2vw); 
+    margin-right: 0.3rem;
     transition: transform 0.3s ease;
     color: var(--primary-color);
 }
@@ -34,6 +34,15 @@ header {
 .reddit-span {
     font-weight: bold;
     color: var(--primary-color);
+}
+
+.logo p,
+.logo span {
+    font-size: calc(0.8rem + 1vw);
+}
+
+.search-input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (max-width: 600px) {
@@ -47,22 +56,16 @@ header {
         width: 100%;
     }
 
-    .search {
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 }
 
 @media only screen and (max-width: 450px) {
 
-    header {
-        padding-left: max(20px, 1.5vw);
-        padding-right: max(3vw, 10px);
-    }
-
     .logo {
         font-size: 1rem;
     }
-    
+
+    .search-input {
+        width: 80%;
+    }
+
 }

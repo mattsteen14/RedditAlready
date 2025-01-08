@@ -19,12 +19,14 @@
 .post-title {
     margin-bottom: 10px;
     color: #000;
+    font-size: calc(0.6rem + 0.8vw);
 }
 
 .post-body {
     color: #000;
     margin-bottom: 10px;
     line-height: 1.5;
+    font-size: calc(0.5rem + 0.5vw);
     white-space: pre-wrap;
     word-wrap: break-word;
     max-height: 10rem;
@@ -89,6 +91,11 @@
 .score-icon, .comments-icon {
     margin-right: 10px;
     font-size: 24px;
+    color: #000;
+}
+
+.comments-icon, 
+.comments-button {
     color: #000;
 }
 

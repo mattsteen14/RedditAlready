@@ -2,11 +2,11 @@
 
 aside {
     position: sticky;
-    top: max(60px, 10vh);
+    top: var(--header-height);
     max-height: var(--content-height);
-    max-width: 300px;
+    max-width: 280px;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     overflow-y: auto;
     border-radius: 10px;
     margin-top: 10px;
@@ -71,6 +71,10 @@ aside {
     min-height: var(--content-height);
 }
 
+.subreddits h2 {
+    padding-left: 10px;
+}
+
 .subreddits li img {
     width: auto;
     height: 50px;
@@ -85,6 +89,7 @@ aside {
     display: flex;
     column-gap: 10px;
     font-weight: 600;
+    font-size: calc(0.6rem + 0.6vw);
     color: #555555;
 }
 

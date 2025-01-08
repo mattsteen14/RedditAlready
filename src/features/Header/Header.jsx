@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import './Header.css';
 import { HiOutlineSearch } from "react-icons/hi";
 import { FaReddit } from "react-icons/fa";
-// import { CiLogin, CiLogout } from "react-icons/ci";
 import { setSearch, delSearch } from '../Search/searchSlice';
 import { setView } from '../View/viewSlice';
 
@@ -30,6 +29,7 @@ export const Header = () => {
         </div>
         <form className='search' onSubmit={handleSearch}>
             <input 
+            className='search-input'
             type='text' 
             placeholder='Search' 
             aria-label='Search posts'
