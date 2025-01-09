@@ -86,11 +86,13 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    font-size: calc(0.8rem + 0.8vw);
 }
 
 .score-icon, .comments-icon {
     margin-right: 10px;
-    font-size: 24px;
+    font-size: calc(1rem + 1vw);
+    /* font-size: 24px; */
     color: #000;
 }
 
@@ -101,6 +103,7 @@
 
 .comments-icon:hover {
     color: #0168e3;
+    cursor: pointer;
 }
 
 .comments-icon.active {

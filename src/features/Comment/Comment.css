@@ -30,4 +30,5 @@
     margin-bottom: 10px;
     color: #000;
     line-height: 1.5;
+    font-size: calc(0.5rem + 0.5vw);
 }

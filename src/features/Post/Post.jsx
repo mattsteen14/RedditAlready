@@ -94,7 +94,7 @@ export const Post = ({ post }) => {
           <PiArrowFatUpLight className='score-icon' />
           {post.score}
         </span>
-        <button
+        <span
           type='button'
           className={'comments-button'}
           onClick={handleToggleComments}
@@ -102,7 +102,7 @@ export const Post = ({ post }) => {
         >
           <TiMessage className={`comments-icon ${commentsVisible ? 'active' : ''}`} />
           {post.num_comments}
-        </button>
+        </span>
       </div>
       {commentsVisible &&
         <div>
