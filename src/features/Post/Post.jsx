@@ -5,9 +5,7 @@ import './Post.css';
 import {
   TiMessage
 } from 'react-icons/ti';
-import {
-  PiArrowFatUpLight
-} from "react-icons/pi";
+import { PiArrowFatUpBold } from "react-icons/pi";
 import subredditLogo from '../../subredditLogo.svg';
 import { toggleComments } from '../../reddit/redditSlice';
 import { Avatar } from '../Avatar/Avatar';
@@ -43,18 +41,19 @@ export const Post = ({ post }) => {
             loading='lazy'
             className='post-subreddit-icon'
           />
-          <span 
-          className='post-subreddit-name'
-          data-testid={'post-subreddit-name'}
+          <span
+            className='post-subreddit-name'
+            data-testid={'post-subreddit-name'}
           >
             {post.subreddit_name_prefixed}
           </span>
         </div>
 
-        <span
-          className='timestamp'
-        >
+        <span className="timestamp full">
           {moment(post.created_utc * 1000).fromNow()}
+        </span>
+        <span className="timestamp short">
+          {moment(post.created_utc * 1000).fromNow().replace("days ago", "d").replace("hours ago", "h").replace("minutes ago", "m").replace("seconds ago", "s")}
         </span>
 
         <div className='author-info'>
@@ -89,9 +88,9 @@ export const Post = ({ post }) => {
       </div>
       <div className='post-footer'>
         <span
-        data-testid={`post-score-${post.id}`}
+          data-testid={`post-score-${post.id}`}
         >
-          <PiArrowFatUpLight className='score-icon' />
+          <PiArrowFatUpBold className='score-icon' />
           {post.score}
         </span>
         <span

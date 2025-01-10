@@ -1,6 +1,6 @@
 .card {
     max-width: 900px;
-    padding: 0.8em;
+    padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
     background-color: white;
@@ -20,4 +20,12 @@
 
 .post-subreddit-name, .author-name, .error-username {
     font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .card {
+        padding: 10px;
+    }
+
 }
