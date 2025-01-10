@@ -1,5 +1,5 @@
 .post-subreddit-icon, .author-icon, .error-icon {
-    margin-right: 5px;
+    margin-right: 0.2rem;
     width:calc(1rem + 1vw);
     height:calc(1rem + 1vw);
     border-radius: 50%;
