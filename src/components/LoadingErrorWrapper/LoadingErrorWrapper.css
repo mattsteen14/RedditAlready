@@ -11,7 +11,8 @@
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
     align-items: center;
     justify-content: center;
-    line-height: 2.5;
+    text-align: center;
+    font-size: calc(0.6rem + 0.6vw);
 }
 
 .retry-button {

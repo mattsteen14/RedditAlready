@@ -10,12 +10,6 @@
     width: 100%;
 }
 
-.post-subreddit-name, .timestamp, .author-name {
-    font-size: calc(0.6rem + 0.6vw);
-    padding: 0;
-    margin: 0;
-}
-
 .timestamp.short {
     display: none;
 }
@@ -98,13 +92,12 @@
 .score-icon, .comments-icon {
     margin-right: 10px;
     font-size: calc(1rem + 1vw);
-    /* font-size: 24px; */
-    color: #555555;
+    color: var(--font-color);
 }
 
 .comments-icon, 
 .comments-button {
-    color: #555555;
+    color: var(--font-color);
 }
 
 .comments-icon:hover {
